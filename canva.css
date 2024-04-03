@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    background-image: url(fundo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    color: red;
+}
+#mycanva{
+    background-color: rgb(229, 229, 229);
+    border-radius: 30px;
+    border-width: 5px;
+    border-color:black;
+    
+}

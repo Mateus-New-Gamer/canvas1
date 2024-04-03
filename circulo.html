@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="canva.css">
+    <title>circulo</title>
+</head>
+<body>
+    <h1>canvas circulo</h1> 
+    <canvas width="600" height="400" id="mycanva" style="border: 5px solid purple;"></canvas>
+   <script type="text/javascript">
+    //chamar canvas
+    var Canvas = document.getElementById("mycanva");
+    var ctx = Canvas.getContext("2d"); //ctx é usado para consultar o canvas 
+    
+    ctx.fillStyle="purple";//cor do circulo
+    ctx.beginPath();//iniciar o caminho
+    ctx.arc(480,70,50,0,Math.PI*2)//criar um circulo no canva ( x,y,raio)
+    //iniciar do circulo , final do circulo pi*2=360
+    ctx.closePath();//finalizar 
+    ctx.fill();//mostra caminho
+   </script>
+   
+    
+</body>
+</html>
